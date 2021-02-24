@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using FastColoredTextBoxNS;
 
@@ -33,7 +28,7 @@ namespace Tester
         {
         }
 
-        public override void Draw(Graphics gr, Point position, Range range)
+        public override void Draw(Graphics gr, Point position, FastColoredTextBoxNS.Range range)
         {
             foreach (Place p in range)
             {
@@ -41,7 +36,7 @@ namespace Tester
                 int angle = (int)(time % 360L);
                 int angle2 = (int)((time - (p.iChar - range.Start.iChar)*20) % 360L)*2;
                 int x =  position.X + (p.iChar - range.Start.iChar) * range.tb.CharWidth;
-                Range r = range.tb.GetRange(p, new Place(p.iChar+1, p.iLine));
+                FastColoredTextBoxNS.Range r = range.tb.GetRange(p, new Place(p.iChar+1, p.iLine));
                 Point point = new Point(x, position.Y + (int)(5 + 5 * Math.Sin(Math.PI * angle2 / 180)));
                 gr.ResetTransform();
                 gr.TranslateTransform(point.X + range.tb.CharWidth / 2, point.Y +range.tb.CharHeight / 2);
