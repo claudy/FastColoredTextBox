@@ -6,9 +6,10 @@
     <AssemblyOriginatorKeyFile>FCTB_key.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>2.16.26.0</Version>
-    <Description>Fast сolored textbox control</Description>
+    <Description>Fast сolored textbox control for net5 framework</Description>
     <Authors>Pavel Torgashov</Authors>
     <Copyright>© Pavel Torgashov, 2011-2016, pavel_torgashov@ukr.net.</Copyright>
+    <PackageId>FastColoredTextBox.Net5</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
