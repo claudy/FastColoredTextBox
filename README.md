@@ -1,6 +1,8 @@
 FastColoredTextBox
 ==================
 
+[![.NET](https://github.com/claudy/FastColoredTextBox/actions/workflows/build.yml/badge.svg)](https://github.com/claudy/FastColoredTextBox/actions/workflows/build.yml)
+
 Fast Colored TextBox is text editor component for .NET.
 Allows you to create custom text editor with syntax highlighting.
 It works well with small, medium, large and very-very large files.

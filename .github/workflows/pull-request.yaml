@@ -1,8 +1,6 @@
-name: .NET
+name: Pull Request CI Build
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -23,3 +21,4 @@ jobs:
       run: dotnet build --no-restore FastColoredTextBox.sln
     - name: Test
       run: dotnet test --no-build --verbosity normal  FastColoredTextBox.sln
+    # No package build step

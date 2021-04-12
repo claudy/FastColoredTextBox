@@ -1,13 +1,9 @@
-﻿using System;
+﻿using FastColoredTextBoxNS;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Windows.Forms;
-using FastColoredTextBoxNS;
 
 namespace Tester
 {
@@ -18,7 +14,7 @@ namespace Tester
             InitializeComponent();
         }
 
-        
+
         private void cbFont_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbFont.SelectedItem == null)
@@ -217,7 +213,7 @@ namespace Tester
             SetTextColor(HDC, ColorTranslator.ToWin32(range.tb.ForeColor));
             SetBkColor(HDC, ColorTranslator.ToWin32(range.tb.BackColor));
 
-            
+
             //draw background
             if (BackgroundBrush != null)
                 gr.FillRectangle(BackgroundBrush, position.X, position.Y, (range.End.iChar - range.Start.iChar) * range.tb.CharWidth, range.tb.CharHeight);
