@@ -22,4 +22,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal  FastColoredTextBox.sln
     - name: Package
-      run: dotnet test --no-build --verbosity normal  FastColoredTextBox.sln
+      run: dotnet pack --include-symbols
